@@ -2,7 +2,6 @@ let timerId; // переменная, которая будет хранить I
 const startButton = document.getElementById('start');
 let isTamerRunning = false;
 startButton.addEventListener("click", function () {
-    // НУЖНО ПОГУГЛИТЬ ЧТО ТАКОЕ setInterval
     if(!isTamerRunning){
     timerId = setInterval(updateClock, 1000);
     isTamerRunning = true;
